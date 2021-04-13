@@ -1,0 +1,8 @@
+sum_dep = int(input("Введите сумму депозита : " ))
+sum_end = int(input("Введите конечную сумму : " ))
+god_proc= int(input("Введите годовой процент : " ))
+kolvo=0
+while sum_dep!=sum_end:
+    sum_dep + = (god_proc/1200) * sum_dep 
+    kolvo  = kolvo + 1 
+print("колич месяцев " , kolvo)
