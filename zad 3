@@ -1,0 +1,25 @@
+def func(*args):
+    spisok=[]
+    spisok.append('Element')
+    spisok.append('start')
+    spisok.append(args)
+    spisok.append('end')
+    return spisok
+print(func(1,2,3))
+
+# def func(*args):
+#     slovar = {x: args for x , args in enumerate(args)}
+#     return slovar
+# print(func('hello', 5, 'John', ))
+
+def func(*args):
+    list(args)
+    a = []
+    b = []
+    for i in range (len(args)):
+        if args[i] % 2 == 0 :
+            a.append(args[i])
+        b.append(args[i]**2)
+        return a , b
+a, b = func((1,2,3,4,5))
+
